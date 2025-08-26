@@ -34,7 +34,7 @@ export default function FortunePage() {
   const days = Array.from({ length: 31 }, (_, i) => i + 1)
 
   return (
-    <div className="min-h-screen bg-black stars relative aspect-[9/16] max-w-md mx-auto">
+    <div className="min-h-screen relative aspect-[9/16] max-w-md mx-auto bg-[url('/bg.png')] bg-cover bg-center">
       <div className="container mx-auto px-4 py-6">
         {/* Header */}
         <div className="flex items-center mb-6">
@@ -50,18 +50,17 @@ export default function FortunePage() {
           {/* Character */}
           <div className="text-center mb-6 float">
             <img
-              src="/cute-korean-moon-character-with-questioning-expres.png"
+              src="/달푸앙누끼.png"
               alt="달님 푸앙이"
               className="w-24 h-24 mx-auto mb-3"
             />
-            <h1 className="text-xl font-bold text-white mb-2">당신에 대해 알려주세요</h1>
-            <p className="text-sm text-gray-300">정확한 운세를 위해 정보를 입력해주세요</p>
+            <h1 className="text-xl font-bold text-white mb-2">사주 정보를 입력해주세요</h1>
           </div>
 
           {/* Form */}
           <Card className="bg-gray-900/90 backdrop-blur-sm border-gray-700">
             <CardHeader className="pb-4">
-              <CardTitle className="text-center text-white text-lg">운세 정보 입력</CardTitle>
+              <CardTitle className="text-center text-white text-xl">사주 정보 입력</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -171,7 +170,7 @@ export default function FortunePage() {
                 {/* Submit Button */}
                 <Button
                   type="submit"
-                  className="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 text-base font-semibold rounded-full mt-6"
+                  className="w-full bg-purple-600 hover:bg-purple-700 text-white py-4 text-base font-semibold rounded-full mt-6"
                 >
                   운세 확인하기 🔮
                 </Button>

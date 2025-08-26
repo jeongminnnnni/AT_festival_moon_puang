@@ -164,18 +164,6 @@
   }
 }
 
-@keyframes sparkle {
-  0%,
-  100% {
-    transform: scale(0) rotate(0deg);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1) rotate(180deg);
-    opacity: 1;
-  }
-}
-
 .twinkle {
   animation: twinkle 2s ease-in-out infinite;
 }
@@ -192,18 +180,4 @@
 
 .pulse-glow {
   animation: pulse-glow 2s ease-in-out infinite;
-}
-
-.sparkle {
-  animation: sparkle 1.5s ease-in-out infinite;
-}
-
-.stars {
-  background-image: radial-gradient(2px 2px at 20px 30px, #f1c40f, transparent),
-    radial-gradient(2px 2px at 40px 70px, #bdc3c7, transparent),
-    radial-gradient(1px 1px at 90px 40px, #f1c40f, transparent),
-    radial-gradient(1px 1px at 130px 80px, #bdc3c7, transparent),
-    radial-gradient(2px 2px at 160px 30px, #f1c40f, transparent);
-  background-repeat: repeat;
-  background-size: 200px 100px;
 }
