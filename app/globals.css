@@ -1,0 +1,209 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color scheme for mystical night sky theme */
+  --background: #000000; /* Pure Black */
+  --foreground: #ffffff; /* Pure White */
+  --card: #1a1a2e; /* Dark Purple-Blue */
+  --card-foreground: #ffffff; /* Text on Cards */
+  --popover: #16213e; /* Dark Blue */
+  --popover-foreground: #ffffff; /* Light text for popover */
+  --primary: #5b2e91; /* For Buttons */
+  --primary-foreground: #ffffff; /* Button Text */
+  --secondary: #f1c40f; /* Gold for Highlights */
+  --secondary-foreground: #000000; /* Black for Secondary Text */
+  --muted: #bdc3c7; /* Silver for Muted Text */
+  --muted-foreground: #ffffff; /* White for Muted Text */
+  --accent: #f1c40f; /* Gold for Accents */
+  --accent-foreground: #000000; /* Black for Accent Text */
+  --destructive: #e74c3c; /* Red for Error States */
+  --destructive-foreground: #ffffff; /* White for Error Text */
+  --border: #333366; /* Purple-Blue for Borders */
+  --input: #ffffff; /* White for Input Fields */
+  --ring: #f1c40f; /* Gold for Focus Rings */
+  --chart-1: #8e44ad;
+  --chart-2: #3498db;
+  --chart-3: #2ecc71;
+  --chart-4: #e67e22;
+  --chart-5: #e74c3c;
+  --radius: 0.5rem;
+  --sidebar: #000000;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #5b2e91;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f1c40f;
+  --sidebar-accent-foreground: #000000;
+  --sidebar-border: #333366;
+  --sidebar-ring: #f1c40f;
+}
+
+.dark {
+  /* Updated dark mode to also use black background */
+  --background: #000000;
+  --foreground: #ffffff;
+  --card: #1a1a2e;
+  --card-foreground: #ffffff;
+  --popover: #16213e;
+  --popover-foreground: #ffffff;
+  --primary: #6b46c1;
+  --primary-foreground: #ffffff;
+  --secondary: #fbbf24;
+  --secondary-foreground: #000000;
+  --muted: #9ca3af;
+  --muted-foreground: #ffffff;
+  --accent: #fbbf24;
+  --accent-foreground: #000000;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #333366;
+  --input: #ffffff;
+  --ring: #fbbf24;
+  --chart-1: #8b5cf6;
+  --chart-2: #06b6d4;
+  --chart-3: #10b981;
+  --chart-4: #f59e0b;
+  --chart-5: #ef4444;
+  --sidebar: #000000;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #6b46c1;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #fbbf24;
+  --sidebar-accent-foreground: #000000;
+  --sidebar-border: #333366;
+  --sidebar-ring: #fbbf24;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Added custom animations for mystical effects */
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(241, 196, 15, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(241, 196, 15, 0.6), 0 0 30px rgba(241, 196, 15, 0.4);
+  }
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    transform: scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1) rotate(180deg);
+    opacity: 1;
+  }
+}
+
+.twinkle {
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(241, 196, 15, 0.4), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.sparkle {
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+
+.stars {
+  background-image: radial-gradient(2px 2px at 20px 30px, #f1c40f, transparent),
+    radial-gradient(2px 2px at 40px 70px, #bdc3c7, transparent),
+    radial-gradient(1px 1px at 90px 40px, #f1c40f, transparent),
+    radial-gradient(1px 1px at 130px 80px, #bdc3c7, transparent),
+    radial-gradient(2px 2px at 160px 30px, #f1c40f, transparent);
+  background-repeat: repeat;
+  background-size: 200px 100px;
+}
