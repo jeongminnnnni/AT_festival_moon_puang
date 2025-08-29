@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const cafe24Surround = localFont({
-  src: '../fonts/._Cafe24Ssurround-v2.0.woff2',
+  src: '../fonts/Cafe24Ssurround-v2.0.woff2',
   display: 'swap',
 })
 
