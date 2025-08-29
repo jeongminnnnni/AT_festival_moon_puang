@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Shilla_Culture(B)';
+    src: url('Shilla_CultureB-Bold.woff2') format('woff2'),
+        url('Shilla_CultureB-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Shilla_Culture(M)';
+    src: url('Shilla_CultureM-Medium.woff2') format('woff2'),
+        url('Shilla_CultureM-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

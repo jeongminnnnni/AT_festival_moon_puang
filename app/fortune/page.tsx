@@ -48,7 +48,7 @@ export default function FortunePage() {
 
         <div className="max-w-sm mx-auto">
           {/* Character */}
-          <div className="text-center mb-6 float">
+          <div className="text-center mb-6">
             <img
               src="/달푸앙누끼.png"
               alt="달님 푸앙이"
