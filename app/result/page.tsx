@@ -159,7 +159,7 @@ export default function ResultPage() {
   const imageUrl = fortune.gender === "male" ? "/달푸앙남자누끼.png" : "/달푸앙여자누끼.png"
 
   return (
-    <div className="min-h-screen relative aspect-[9/16] max-w-sm mx-auto bg-[url('/bg.png')] bg-cover bg-center">
+    <div className="min-h-screen relative aspect-[9/16] max-w-[25rem] mx-auto bg-[url('/bg.png')] bg-cover bg-center">
       <div className="container mx-auto px-4 py-8 relative z-10">
         <div className="flex items-center justify-between mb-8">
           <Link href="/">

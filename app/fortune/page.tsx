@@ -34,7 +34,7 @@ export default function FortunePage() {
   const days = Array.from({ length: 31 }, (_, i) => i + 1)
 
   return (
-    <div className="min-h-screen relative aspect-[9/16] max-w-sm mx-auto bg-[url('/bg.png')] bg-cover bg-center">
+    <div className="min-h-screen relative aspect-[9/16] max-w-[25rem] mx-auto bg-[url('/bg.png')] bg-cover bg-center">
       <div className="container mx-auto px-4 py-6">
         {/* Header */}
         <div className="flex items-center mb-6">

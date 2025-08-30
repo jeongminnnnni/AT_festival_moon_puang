@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen relative overflow-hidden aspect-[9/16] max-w-sm mx-auto bg-[url('/bg.png')] bg-cover bg-center">
+    <div className="min-h-screen relative overflow-hidden aspect-[9/16] max-w-[25rem] mx-auto bg-[url('/bg.png')] bg-cover bg-center">
       <div className="container mx-auto px-6 py-8 relative z-10">
         <div className="flex flex-col items-center justify-center min-h-screen text-center space-y-8">
           {/* Main Character */}
