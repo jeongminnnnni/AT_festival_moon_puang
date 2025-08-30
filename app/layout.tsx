@@ -3,9 +3,10 @@ import localFont from 'next/font/local'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
+  title: '푸앙운세',
   description: 'Created with v0',
   generator: 'v0.app',
+  viewport: 'width=device-width, initial-scale=1',
 }
 
 const cafe24Surround = localFont({

@@ -214,14 +214,9 @@ export default function ResultPage() {
           <div className="flex gap-4 justify-center mt-6">
             <Link href="/fortune">
               <Button
-                className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105 px-16 font-sm"
+                className="bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 px-16 font-sm"
               >
                 다시 보기
-              </Button>
-            </Link>
-            <Link href="/">
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105 px-16 font-sm">
-                처음으로
               </Button>
             </Link>
           </div>

@@ -22,15 +22,14 @@ export default function HomePage() {
           {/* Title Section */}
           <div className="space-y-4 max-w-md float">
             <img src="/푸앙운세 글씨.png" alt="푸앙운세" className="max-w-sm mx-auto" />
-            <p className="text-xs text-accent font-bold mb-0"></p>
           </div>
 
           {/* CTA Button */}
-          <div className="pt-55">
+          <div className="pt-55 mt-10">
             <Link href="/fortune">
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-18 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                className="bg-purple/50 backdrop-blur-md border border-purple/20 text-white hover:bg-purple/20 px-18 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 ✨ 운세 보러가기 ✨
               </Button>
