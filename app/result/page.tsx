@@ -159,7 +159,7 @@ export default function ResultPage() {
   const imageUrl = fortune.gender === "male" ? "/달푸앙남자누끼.png" : "/달푸앙여자누끼.png"
 
   return (
-    <div className="min-h-screen relative aspect-[9/16] max-w-md mx-auto bg-[url('/bg.png')] bg-cover bg-center">
+    <div className="min-h-screen relative aspect-[9/16] max-w-lg mx-auto bg-[url('/bg.png')] bg-cover bg-center">
       <div className="container mx-auto px-4 py-8 relative z-10">
         <div className="flex items-center justify-between mb-8">
           <Link href="/">
@@ -214,7 +214,7 @@ export default function ResultPage() {
           <div className="flex gap-4 justify-center mt-6">
             <Link href="/fortune">
               <Button
-                className="bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 px-16 font-sm"
+                className="bg-violet-700 hover:bg-violet-600 text-white shadow-lg hover:shadow-xl hover:shadow-violet/25 transition-all duration-300 transform hover:scale-105 px-16 font-sm"
               >
                 다시 보기
               </Button>
